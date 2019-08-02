@@ -1,0 +1,6 @@
+#!/bin/bash
+cd ./build
+cf push "${CF_APP}" -b https://github.com/cloudfoundry/staticfile-buildpack.git 
+
+# View logs
+# cf logs "${CF_APP}" --recent
